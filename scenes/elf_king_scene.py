@@ -1,4 +1,3 @@
-from item import item
 
 from time import sleep
 from battle import Battle

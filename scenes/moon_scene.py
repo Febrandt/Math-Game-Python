@@ -3,7 +3,6 @@ from scenes.mage_house_scene import MageHouseScene
 from scenes.scene import Scene
 from battle import Battle
 from entity import Entity
-from item import item
 
 
 

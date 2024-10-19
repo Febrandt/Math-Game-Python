@@ -1,4 +1,3 @@
-from item import item
 
 from battle import Battle
 from entity import Entity
