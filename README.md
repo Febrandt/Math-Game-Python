@@ -8,7 +8,77 @@ Warrior, Archer, and Witch.
 With 3 difficulties: Easy, Medium, Hard.  
 
 The battle is simple: You have to solve the math questions! Easy. But if you answer correctly too many times, you're gonna have problems!!!
+Entity Class Documentation
+==========================
 
+Overview
+--------
+
+The `Entity` class represents a character or object in the game with attributes such as health, damage, and inventory.
+
+Class Definition
+----------------
+```python
+    class Entity:
+        def __init__(self, emoji, health, damage) -> None:
+```
+### Parameters:
+
+*   **emoji (str):** A string representing the character's emoji.
+*   **health (int):** The initial health points of the entity.
+*   **damage (int):** The amount of damage the entity can inflict.
+
+Methods
+-------
+
+### `print_health()`
+
+Displays the current health of the entity along with its emoji.
+
+### `attack(enemy)`
+
+Inflicts damage on the specified enemy entity.
+
+#### Parameters:
+
+*   **enemy (Entity):** The enemy entity that will receive the damage.
+
+### `add_item(item)`
+
+Adds an item to the entity's inventory.
+
+#### Parameters:
+
+*   **item (dict):** A dictionary representing the item to be added, containing at least `name` and `description` keys.
+
+### `print_inventory()`
+
+Displays the items currently in the entity's inventory.
+
+Example Usage
+-------------
+```python
+    # Create an entity instance
+    player = Entity(emoji='🧙‍♂️', health=100, damage=20)
+    
+    # Print health
+    player.print_health()
+    
+    # Create an enemy entity
+    enemy = Entity(emoji='🐉', health=80, damage=15)
+    
+    # Player attacks enemy
+    player.attack(enemy)
+    
+    # Print enemy health after attack
+    enemy.print_health()
+    
+    # Add item to player's inventory
+    player.add_item({'name': 'Health Potion', 'description': 'Restores 20 health.'})
+    
+    # Print inventory
+    player.print_inventory()
+```
 Battle Class Documentation
 ==========================
 
