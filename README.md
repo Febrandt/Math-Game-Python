@@ -8,6 +8,7 @@ Warrior, Archer, and Witch.
 With 3 difficulties: Easy, Medium, Hard.  
 
 The battle is simple: You have to solve the math questions! Easy. But if you answer correctly too many times, you're gonna have problems!!!
+
 Entity Class Documentation
 ==========================
 
